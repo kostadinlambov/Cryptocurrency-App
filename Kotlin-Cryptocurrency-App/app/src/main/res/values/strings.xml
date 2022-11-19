@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Exam</string>
+    <string name="price">Price</string>
+    <string name="market_cap">Market cap</string>
+    <string name="highest_value_for_last_24_h">Highest last 24 h</string>
+    <string name="percentage_price_change">Change price %</string>
+    <string name="percentage_market_cap_change">Change market cap %</string>
+    <string name="lowest_24_h">Lowest 24 h</string>
+</resources>

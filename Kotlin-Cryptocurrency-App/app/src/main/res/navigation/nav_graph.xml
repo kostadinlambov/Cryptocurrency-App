@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/firstFragment">
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.example.exam.fragment.FirstFragment"
+        android:label="Cryptocurrencies">
+        <action
+            android:id="@+id/action_firstFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.example.exam.fragment.SecondFragment"
+        android:label="Details">
+
+        <argument
+            android:name="name"
+            android:defaultValue="default"
+            app:argType="string" />
+
+        <argument
+            android:name="logo"
+            android:defaultValue="default"
+            app:argType="string" />
+
+        <argument
+            android:name="symbol"
+            android:defaultValue="default"
+            app:argType="string" />
+
+        <argument
+            android:name="price"
+            android:defaultValue="default"
+            app:argType="string" />
+
+        <argument
+            android:name="marketCap"
+            android:defaultValue="default"
+            app:argType="string" />
+
+        <argument
+            android:name="high24h"
+            android:defaultValue="default"
+            app:argType="string" />
+
+        <argument
+            android:name="low24h"
+            android:defaultValue="default"
+            app:argType="string" />
+
+        <argument
+            android:name="marketCapChangePercentage24h"
+            android:defaultValue="default"
+            app:argType="string" />
+
+        <argument
+            android:name="priceChange24h"
+            android:defaultValue="default"
+            app:argType="string" />
+
+        <argument
+            android:name="isFavorite"
+            android:defaultValue="false"
+            app:argType="boolean" />
+
+        <action
+            android:id="@+id/action_secondFragment_to_firstFragment"
+            app:destination="@id/firstFragment"
+            app:popUpTo="@id/firstFragment"
+            app:popUpToInclusive="true"  />
+    </fragment>
+
+</navigation>
